@@ -89,13 +89,42 @@ section h3 {
 }
 
 .participant-list {
-  padding-left: 20px;
+  padding-left: 0;
+  list-style: none;
   color: #424b63;
 }
 
 .participant-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   padding: 2px 0;
   overflow-wrap: anywhere;
+}
+
+.unregister-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: transparent;
+  color: #c62828;
+}
+
+.unregister-button:hover {
+  background-color: #ffebee;
+}
+
+.unregister-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
 .no-participants {
